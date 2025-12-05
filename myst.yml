@@ -17,7 +17,7 @@ project:
     # description:
   # keywords: []
   # authors: []
-  # github:
+  github: https://citius70.github.io/3eso-sheets/
   # To autogenerate a Table of Contents, run "myst init --write-toc"
 site:
   template: book-theme
