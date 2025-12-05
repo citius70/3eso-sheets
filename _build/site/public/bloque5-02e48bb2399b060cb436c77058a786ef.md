@@ -1,0 +1,70 @@
+# V: Colaboración, Seguridad y Automatización
+
+Este bloque explica cómo Google Sheets funciona en la nube, permitiendo el trabajo en equipo, la protección de datos y la conexión con miles de otras aplicaciones.
+
+## 1. Google Sheets como Plataforma Colaborativa
+
+Google Sheets es una aplicación de hoja de cálculo **gratuita y basada en la web** que forma parte del servicio Google Drive. A diferencia del software tradicional de escritorio, Sheets fue diseñado pensando en la colaboración.
+
+### I. Edición en Tiempo Real
+
+* **Colaboración en Vivo:** La característica clave es la **edición simultánea**. Múltiples usuarios pueden abrir, editar y dar formato al mismo documento al mismo tiempo.
+* **Guardado Automático:** Todos los cambios realizados se **guardan automáticamente** en los servidores de Google.
+* **Historial de Revisión:** La función de **Historial de Revisión** (*Revision History*) rastrea todas las modificaciones. Esto permite a los editores revisar ediciones anteriores y **revertir cualquier cambio no deseado** o no autorizado.
+* **Comunicación Integrada:** Incluye una función de **chat en la barra lateral** que permite a los colaboradores discutir las ediciones y hacer recomendaciones en tiempo real sin tener que usar correos electrónicos externos.
+
+## 2. Gestión de Seguridad y Permisos
+
+Para trabajar con datos sensibles o en equipo, es esencial controlar quién puede acceder y modificar el archivo.
+
+### I. Roles de Acceso (Permisos)
+
+Al compartir un documento, se debe asignar un nivel de permiso a cada usuario para **controlar quién puede ver, editar o comentar**.
+
+| Rol de Permiso | Capacidad de Interacción | Citas de Origen |
+| :--- | :--- | :--- |
+| **Lector** (Viewer) | Solo puede ver el contenido del documento. | |
+| **Comentarista** (Commenter) | Puede ver el contenido y dejar comentarios, pero no puede editar los datos. | |
+| **Editor** | Puede realizar cambios en el documento, incluyendo editar los datos. Si se le permite, también puede cambiar la configuración de uso compartido. | |
+| **Writer** (Escritor, Rol avanzado) | Puede añadir, editar o borrar datos dentro de las filas. **No puede modificar la estructura de la hoja** (como las columnas o las fórmulas críticas). | |
+
+### II. Protección Avanzada
+
+Google Sheets ofrece **funciones avanzadas de seguridad** para proteger partes específicas del documento.
+
+* **Protección de Pestañas y Rangos:** Se pueden **proteger pestañas** (*sheets*) completas o **rangos de celdas** específicos para evitar que los usuarios, incluso los Editores, puedan modificarlos. Esto permite a los usuarios **ver los datos**, pero restringe la edición.
+* **Restricción de Permisos:** Se puede configurar el archivo para **evitar que los Editores cambien los permisos de acceso** o añadan nuevas personas.
+* **Fechas de Caducidad:** Se pueden establecer **fechas de caducidad** para el acceso, lo cual es útil para dar acceso temporal a colaboradores externos (disponible en cuentas de Google Workspace).
+
+## 3. Integración y Automatización (Apps Script y Zapier)
+
+Sheets es un nodo central en el ecosistema digital, capaz de conectarse con miles de otras aplicaciones y automatizar tareas.
+
+### I. Automatización con Apps Script (Low-Code)
+
+**Google Apps Script (GAS)** es un entorno de programación de **bajo código basado en JavaScript** que permite a los usuarios automatizar y mejorar Google Sheets.
+
+* **Funciones Personalizadas y Macros:** Permite crear **funciones personalizadas** o **macros** adaptadas a las necesidades específicas.
+* **Integración con Google Cloud:** Apps Script se utiliza para conectar Sheets con otros servicios de Google Workspace. Un ejemplo avanzado es usar Apps Script para **activar un "Workflow"** (flujo de trabajo) en Google Cloud, como la creación de una máquina virtual (VM), cuando se marca una casilla de verificación en una celda de Sheets.
+* **Creación de Documentos y Comunicación:** Apps Script puede automatizar tareas complejas, como crear un documento de Google Docs y enviar un correo electrónico al usuario con el enlace a ese nuevo documento.
+
+### II. Conexión con Aplicaciones Externas (Zapier)
+
+Plataformas como Zapier actúan como un puente que conecta Google Sheets con **más de 8,000 aplicaciones** de terceros. Esto permite crear flujos de trabajo automatizados (Zaps).
+
+| Tarea Automatizada (Ejemplos) | Aplicaciones Integradas | Citas de Origen |
+| :--- | :--- | :--- |
+| **Recopilación de Datos** | Añadir nuevos leads de **Google Ads** o **Facebook Lead Ads** como filas en Sheets. | |
+| **Notificaciones** | Enviar mensajes a **Slack** o correos electrónicos vía **Gmail** cuando se actualizan filas en Sheets. | |
+| **Registro de Transacciones** | Registrar nuevas ventas de **Stripe** o citas de **Acuity Scheduling** como nuevas filas en Sheets. | |
+
+### III. Compatibilidad de Archivos
+
+Google Sheets garantiza la compatibilidad con formatos tradicionales, facilitando el intercambio de datos.
+
+* **Importación:** Soporta la apertura y edición de archivos de **Microsoft Excel** (como `.xlsx`, `.xls`), `.csv`, `.ods`, y `.tsv`.
+* **Exportación:** Permite la exportación de datos a formatos estándar como `.xlsx` y `.pdf`.
+
+---
+**Recuerda:**
+La **Colaboración** se basa en tener una única fuente de verdad (el archivo en Drive), mientras que la **Seguridad** se gestiona limitando los permisos (Lector, Comentarista, Editor) y **protegiendo** las celdas clave. La **Automatización** permite a Sheets convertirse en una parte activa de los procesos al conectarse a otras aplicaciones mediante Apps Script o herramientas como Zapier.

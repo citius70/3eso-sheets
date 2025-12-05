@@ -1,0 +1,27 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 13941c07-f0e6-474b-9b35-56db2e65e1b0
+  # title: Google Sheets 3º ESO
+  subject: Hojas de cálculo
+  exports:
+  - format: pdf
+    template: volcanica
+    article_type: Report
+  authors:
+  - name: Alberto Durán Pérez
+    affiliations:
+      - IES Frei Martín Sarmiento
+      - Departamento de Tecnología
+    email: aduranperez@freimartinsarmiento.com
+    # description:
+  # keywords: []
+  # authors: []
+  # github:
+  # To autogenerate a Table of Contents, run "myst init --write-toc"
+site:
+  template: book-theme
+  options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png
+    style: ./mis_estilos/mi_estilo_1.css

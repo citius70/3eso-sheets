@@ -1,0 +1,45 @@
+{
+  "input": {
+    "files": [
+      "bloque1.md"
+    ],
+    "opts": {
+      "execute": false,
+      "pdf": true,
+      "tex": false,
+      "typst": false,
+      "docx": false,
+      "md": false,
+      "xml": false,
+      "meca": false,
+      "cff": false,
+      "site": false,
+      "html": false,
+      "all": false,
+      "doiBib": false,
+      "watch": false,
+      "force": false,
+      "checkLinks": false,
+      "strict": false,
+      "ci": false,
+      "maxSizeWebp": 1572864,
+      "keepHost": false
+    }
+  },
+  "exports": [
+    {
+      "format": "pdf",
+      "template": "volcanica",
+      "article_type": "Report",
+      "output": "C:\\Users\\alber\\Box\\_Instituto\\web_generators\\myst\\3eso\\hoja_calculo\\_build\\exports\\bloque1.pdf",
+      "articles": [
+        {
+          "file": "C:\\Users\\alber\\Box\\_Instituto\\web_generators\\myst\\3eso\\hoja_calculo\\bloque1.md",
+          "level": 0
+        }
+      ],
+      "$file": "C:\\Users\\alber\\Box\\_Instituto\\web_generators\\myst\\3eso\\hoja_calculo\\bloque1.md",
+      "$project": "C:\\Users\\alber\\Box\\_Instituto\\web_generators\\myst\\3eso\\hoja_calculo"
+    }
+  ]
+}
