@@ -1,3 +1,9 @@
+/* h2, h3{
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
 /* ==========================================================================
    VARIABLES Y RESET SEGURO
    ========================================================================== */

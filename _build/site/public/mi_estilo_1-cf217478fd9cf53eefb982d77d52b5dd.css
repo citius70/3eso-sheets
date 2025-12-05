@@ -1,3 +1,9 @@
+/* h2, h3{
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
 /* ==========================================================================
    VARIABLES Y RESET SEGURO
    ========================================================================== */
@@ -99,7 +105,6 @@ table {
 
 thead {
   background-color: var(--primary-color);
-
 }
 
 thead th {
@@ -111,7 +116,7 @@ thead th {
 }
 
 tbody tr {
-  border-bottom: 6px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 tbody tr:nth-child(even) {
@@ -286,7 +291,7 @@ a:hover {
   }
   
   .myst-container {
-    padding:30px;
+    padding: 10px;
   }
   
   main {

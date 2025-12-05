@@ -1,0 +1,521 @@
+/* h2, h3{
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+/* ==========================================================================
+   VARIABLES Y RESET
+   ========================================================================== */
+:root {
+  --primary-color: #4285f4;
+  --primary-dark: #3367d6;
+  --secondary-color: #34a853;
+  --accent-color: #ea4335;
+  --text-primary: #202124;
+  --text-secondary: #5f6368;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-code: #f1f3f4;
+  --border-color: #dadce0;
+  --shadow-light: 0 1px 3px rgba(0,0,0,0.12);
+  --shadow-medium: 0 4px 12px rgba(0,0,0,0.1);
+  --shadow-heavy: 0 8px 24px rgba(0,0,0,0.12);
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   TIPOGRAFÍA MODERNA
+   ========================================================================== */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ==========================================================================
+   ENCABEZADOS
+   ========================================================================== */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 2.5rem 0 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid var(--primary-color);
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+}
+
+h1:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  border-radius: 2px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 2rem 0 1rem;
+  padding: 0.75rem 0;
+  border-left: 5px solid var(--primary-color);
+  padding-left: 1rem;
+  background: linear-gradient(to right, transparent, rgba(66, 133, 244, 0.05));
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 1.5rem 0 0.75rem;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid var(--bg-secondary);
+}
+
+h4, h5, h6 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin: 1.25rem 0 0.5rem;
+}
+
+/* ==========================================================================
+   CONTENIDO PRINCIPAL
+   ========================================================================== */
+main {
+  background: var(--bg-primary);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  margin: 2rem 0;
+  box-shadow: var(--shadow-medium);
+}
+
+/* ==========================================================================
+   TABLAS MODERNAS
+   ========================================================================== */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 2rem 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-light);
+  background: white;
+}
+
+thead {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+}
+
+thead th {
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 1.25rem 1rem;
+  border: none;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+tbody tr {
+  transition: var(--transition);
+  border-bottom: 1px solid var(--border-color);
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--bg-secondary);
+}
+
+tbody tr:hover {
+  background-color: rgba(66, 133, 244, 0.08);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-light);
+}
+
+td {
+  padding: 1rem;
+  color: var(--text-primary);
+  border: none;
+  font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   LISTAS MEJORADAS
+   ========================================================================== */
+ul, ol {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin: 0.75rem 0;
+  padding-left: 0.5rem;
+  position: relative;
+}
+
+ul li:before {
+  content: '•';
+  color: var(--primary-color);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  font-size: 1.2em;
+}
+
+ol {
+  counter-reset: item;
+}
+
+ol li:before {
+  counter-increment: item;
+  content: counter(item);
+  background: var(--primary-color);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.75rem;
+  margin-left: -2.5rem;
+}
+
+/* ==========================================================================
+   CÓDIGO Y BLOQUES
+   ========================================================================== */
+code {
+  background: var(--bg-code);
+  padding: 0.2rem 0.4rem;
+  border-radius: var(--radius-sm);
+  font-family: 'SF Mono', Monaco, 'Cascadia Code', Consolas, monospace;
+  font-size: 0.9em;
+  color: var(--primary-dark);
+  border: 1px solid var(--border-color);
+}
+
+pre {
+  background: linear-gradient(135deg, #2d3748, #1a202c);
+  color: #e2e8f0;
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  box-shadow: var(--shadow-medium);
+  border-left: 4px solid var(--accent-color);
+}
+
+pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   BLOQUES DE CITA Y NOTAS
+   ========================================================================== */
+blockquote {
+  background: linear-gradient(90deg, rgba(66, 133, 244, 0.1), transparent);
+  border-left: 4px solid var(--primary-color);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-style: italic;
+  color: var(--text-secondary);
+  position: relative;
+}
+
+blockquote:before {
+  content: '"';
+  font-size: 4rem;
+  color: rgba(66, 133, 244, 0.2);
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  font-family: Georgia, serif;
+}
+
+/* ==========================================================================
+   ENLACES
+   ========================================================================== */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 0.2rem 0;
+  position: relative;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  transition: width 0.3s ease;
+}
+
+a:hover:after {
+  width: 100%;
+}
+
+/* ==========================================================================
+   IMÁGENES
+   ========================================================================== */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-medium);
+  margin: 1.5rem 0;
+  transition: var(--transition);
+}
+
+img:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-heavy);
+}
+
+/* ==========================================================================
+   CONTENEDORES ESPECIALES
+   ========================================================================== */
+.container-note {
+  background: linear-gradient(135deg, rgba(66, 133, 244, 0.08), transparent);
+  border: 1px solid rgba(66, 133, 244, 0.2);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  position: relative;
+}
+
+.container-warning {
+  background: linear-gradient(135deg, rgba(234, 67, 53, 0.08), transparent);
+  border: 1px solid rgba(234, 67, 53, 0.2);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.container-tip {
+  background: linear-gradient(135deg, rgba(52, 168, 83, 0.08), transparent);
+  border: 1px solid rgba(52, 168, 83, 0.2);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+/* ==========================================================================
+   BARRA LATERAL DE CONTENIDOS (TOC)
+   ========================================================================== */
+.toc {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: var(--shadow-light);
+  position: sticky;
+  top: 20px;
+}
+
+.toc-title {
+  color: var(--text-primary);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.toc ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.toc li {
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+}
+
+.toc li:hover {
+  background: rgba(66, 133, 244, 0.1);
+  transform: translateX(5px);
+}
+
+.toc a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.toc a:hover {
+  color: var(--primary-color);
+}
+
+.toc a:before {
+  content: '→';
+  margin-right: 0.75rem;
+  opacity: 0.5;
+  transition: var(--transition);
+}
+
+.toc a:hover:before {
+  opacity: 1;
+  transform: translateX(3px);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+@media (max-width: 768px) {
+  body {
+    padding: 0 15px;
+  }
+  
+  main {
+    padding: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+  
+  .toc {
+    position: static;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0 10px;
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  h2 {
+    font-size: 1.25rem;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+}
+
+/* ==========================================================================
+   ANIMACIONES Y EFECTOS
+   ========================================================================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+footer {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border-color);
+}
+
+footer a {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   CLASES ESPECIALES PARA CONTENIDO EDUCATIVO
+   ========================================================================== */
+.learning-objective {
+  background: linear-gradient(135deg, #f0f7ff, #e3f2fd);
+  border-left: 5px solid var(--primary-color);
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.activity-box {
+  background: var(--bg-secondary);
+  border: 2px dashed var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.activity-box:before {
+  content: '🔄 Actividad';
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background: var(--primary-color);
+  color: white;
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+}

@@ -3,10 +3,9 @@
 ## 1. ¿Qué es Google Sheets?
 
 :::{note} Google Sheets
+class: note-box
 **Google Sheets** (Hojas de Cálculo) es una aplicación de **hoja de cálculo** gratuita y basada en la web, provista por Google dentro del servicio **Google Drive**.
 :::
-
-
 
 Permite a los usuarios organizar, editar, analizar diferentes tipos de información, y es clave para el trabajo colaborativo, ya que múltiples usuarios pueden editar y dar formato a los archivos en tiempo real.
 

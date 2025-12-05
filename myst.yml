@@ -3,7 +3,7 @@ version: 1
 project:
   id: 13941c07-f0e6-474b-9b35-56db2e65e1b0
   # title: Google Sheets 3º ESO
-  subject: Hojas de cálculo
+  subject: Hojas de cálculo - Google Sheets
   exports:
   - format: pdf
     template: volcanica
@@ -24,4 +24,6 @@ site:
   options:
   #   favicon: favicon.ico
   #   logo: site_logo.png
-    style: ./mis_estilos/mi_estilo_1.css
+  style: ./mis_estilos/mi_estilo_1.css
+  extra_css:
+    - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
