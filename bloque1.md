@@ -6,8 +6,6 @@
 **Google Sheets** (Hojas de Cálculo) es una aplicación de **hoja de cálculo** gratuita y basada en la web, provista por Google dentro del servicio **Google Drive**.
 :::
 
-
-
 Permite a los usuarios organizar, editar, analizar diferentes tipos de información, y es clave para el trabajo colaborativo, ya que múltiples usuarios pueden editar y dar formato a los archivos en tiempo real.
 
 Una hoja de cálculo es el documento completo (o **Spreadsheet**) que contiene conjuntos de columnas y filas. Dentro de un documento, puede haber una o más **Worksheets** (hojas), que son conjuntos nombrados de filas y columnas.
