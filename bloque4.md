@@ -13,6 +13,11 @@ La función **BUSCARV** (o VLOOKUP) se utiliza para **buscar un valor** en la pr
 * **Búsqueda Geográfica:** Después de calcular la **Densidad** (habitantes/km2) para varias Comunidades Autónomas, podemos configurar una celda para que, al ingresar el nombre de una Comunidad (ej. Madrid), la función **BUSCARV** devuelva automáticamente su densidad correspondiente (ej. 841,17).
 * **Clasificación Climática:** Se puede utilizar **BUSCARV** para buscar un **Índice de Aridez** (calculado a partir de datos de precipitaciones y temperatura, como en el caso de Pontevedra) y devolver el **Tipo de clima** asociado (ej. Húmedo) que se encuentra en una tabla de rangos predefinidos.
 
+:::{figure} images/bloque4.png
+:label: Análisis
+Análisis de datos en Google Sheets.
+:::
+
 ## 2. Análisis Asistido por IA: La Función Explorar
 
 Google Sheets incluye una potente herramienta que utiliza **aprendizaje automático** (Machine Learning o IA) para ayudar a analizar datos sin necesidad de escribir fórmulas complejas. Esta herramienta se conoce como la función **Explorar** (*Explore feature*).
