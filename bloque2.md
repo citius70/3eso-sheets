@@ -35,6 +35,11 @@ Cuando se realizan cálculos (como la división), es importante aplicar formatos
 * **Formato Decimal:** Permite limitar el resultado a un número específico de cifras después de la coma. Por ejemplo, un resultado puede mostrarse con **dos decimales, únicamente** (ej. 130,67).
 * **Formato Moneda:** Se utiliza para indicar que un valor representa dinero, añadiendo el símbolo de la moneda (ej. **€** en la tabla de dinero ahorrado mensual).
 
+:::{figure} images/bloque2.png
+:label: formulas
+Fórmulas y funciones de Google Sheets.
+:::
+
 ---
 
 ## 2. Funciones: Automatización de Cálculos

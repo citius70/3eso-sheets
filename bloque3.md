@@ -23,6 +23,11 @@ La Referencia Absoluta se usa cuando un valor específico **nunca debe cambiar**
 * **Ejemplo (Calificaciones):** Si quieres calcular la nota **Final** sumando un valor **Extra** fijo (por ejemplo, 0,5) a la nota Media, y ese valor extra está en la celda H1, la fórmula debe ser `=D2+$H$1`. Al copiar esta fórmula, la referencia a `$H$1` **permanecerá fija**, mientras que la referencia a `D2` (la nota media) cambiará de forma relativa (D3, D4, etc.).
 * **Ejemplo (IVA):** Si calculas el **IVA del Importe**, donde el porcentaje de IVA (`21,00%`) está en la celda `E1`, la fórmula debe ser `=D3*$E$1`. El `D3` (el importe) es relativo, pero el `$E$1` (el porcentaje) es absoluto para que se aplique correctamente a todos los artículos.
 
+:::{figure} images/bloque3.png
+:label: Referencias
+Referencias en Google Sheets.
+:::
+
 ---
 
 ## 2. Lógica Condicional (Tomar Decisiones)
