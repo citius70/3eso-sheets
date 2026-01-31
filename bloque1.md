@@ -6,20 +6,22 @@
 **Google Sheets** (Hojas de Cálculo) es una aplicación de **hoja de cálculo** gratuita y basada en la web, provista por Google dentro del servicio **Google Drive**.
 :::
 
-Permite a los usuarios organizar, editar, analizar diferentes tipos de información, y es clave para el trabajo colaborativo, ya que múltiples usuarios pueden editar y dar formato a los archivos en tiempo real.
+Permite a los usuarios *organizar, editar, analizar diferentes tipos de información*, y es clave para el trabajo colaborativo, ya que múltiples usuarios pueden editar y dar formato a los archivos en tiempo real.
 
-Una hoja de cálculo es el documento completo (o **Spreadsheet**) que contiene conjuntos de columnas y filas. Dentro de un documento, puede haber una o más **Worksheets** (hojas), que son conjuntos nombrados de filas y columnas.
 
 ## 2. Vocabulario Estructural
 
-Para trabajar en Google Sheets, es esencial conocer los nombres de sus componentes principales, que forman una matriz o cuadrícula:
+Para trabajar en Google Sheets, es esencial conocer los nombres de sus componentes principales, que forman una matriz o cuadrícula.
 
-| Concepto             | Definición                                                                                                                                        | Ejemplos (Basados en las Tareas)           | Citas de Origen |
-| :------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------- | :-------------- |
-| **Celda** (Cell)     | Es la unidad mínima y fundamental de información, o un solo punto de dato. Se identifica por la intersección de una columna y una fila.           | B4, A9, E12, D5, F18.                      |                 |
-| **Columna** (Column) | Es la disposición vertical de celdas, identificada por letras (A, B, C...).                                                                       | Colorear la **columna C** de color verde.  |                 |
-| **Fila** (Row)       | Es la disposición horizontal de celdas, identificada por números (1, 2, 3...).                                                                    | Colorear la **fila 8** de color gris.      |                 |
-| **Rango** (Range)    | Es un conjunto rectangular de múltiples celdas adyacentes. Se define por las referencias de las celdas de las esquinas, separadas por dos puntos. | E3:G7 (rango de celdas coloreado de rosa). |                 |
+> Una **hoja de cálculo** (o spreadsheet) es el *archivo o libro* de trabajo integral que organiza la información en múltiples **hojas de trabajo** (worksheets), que funcionan como secciones independientes y nombradas dentro del mismo archivo.  Cada hoja de trabajo contiene una **matriz** o **cuadrícula** compuesta por **celdas** (cells), que son las unidades básicas donde se introducen y manipulan los datos.
+
+
+| Concepto             | Definición                                                                                                                                        | Ejemplos           | 
+| :------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------- | 
+| **Celda** (Cell)     | Es la **unidad mínima y fundamental de información**, o un solo punto de dato. Se identifica por la intersección de una columna y una fila.           | B4, A9, E12, D5, F18.                      |
+| **Columna** (Column) | Es la **disposición vertical de celdas**, identificada por **letras** (A, B, C...).                                                                       |  A, B, C, D, E...  |
+| **Fila** (Row)       | Es la **disposición horizontal de celdas**, identificada por **números** (1, 2, 3...).                                                                    | 1, 2, 3, 4, 5...      |
+| **Rango** (Range)    | Es un **conjunto rectangular de múltiples celdas adyacentes**. Se define por **las referencias de las celdas de las esquinas**, separadas por dos puntos. | E3:G7 |
 
 :::{figure} images/bloque1.png
 :label: fundamentos
@@ -40,10 +42,10 @@ El formato manual permite modificar directamente la apariencia de los datos, mej
 
 ### A. Formato de Contenido: Texto y Números
 
-| Formato              | Uso Práctico                                                                            | Ejemplos de Contenido                                                                                                                 | Citas de Origen |
-| :------------------- | :-------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------ | :-------------- |
-| **Estilo de Fuente** | Destacar información importante. Se utilizan: **Negrita**, **Subrayado** y **Cursiva**. | Escribir **6798** en **negrita**. Escribir **"Fotografía" subrayada** en B10. Escribir el número **56** en **cursiva de color rojo**. |                 |
-| **Alineación**       | Determinar la posición del contenido dentro de la celda.                                | **Centrar** la palabra **"Internet"** en la celda F18.                                                                                |                 |
+| Formato              | Uso Práctico                                                                            | Ejemplos de Contenido                                                                                                                 |
+| :------------------- | :-------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------ | 
+| **Estilo de Fuente** | Destacar información importante. Se utilizan: **Negrita**, **Subrayado** y **Cursiva**. | Escribir **6798** en **negrita**. Escribir **"Fotografía" subrayada** en B10. Escribir el número **56** en **cursiva de color rojo**. |
+| **Alineación**       | Determinar la posición del contenido dentro de la celda.                                | **Centrar** la palabra **"Internet"** en la celda F18.                                                                                |
 
 ### B. Formato de Estructura
 

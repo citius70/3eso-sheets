@@ -1,6 +1,6 @@
 # Introducción
 
-Imagina una hoja de cálculo como un **supercuaderno digital** diseñado específicamente para organizar, analizar y calcular datos de forma eficiente. En lugar de escribir números y hacer cálculos a mano con una calculadora, la hoja de cálculo lo hace por ti al instante.
+Imagina una **hoja de cálculo** como un **supercuaderno digital** diseñado específicamente para *organizar, analizar y calcular* de forma eficiente. En lugar de escribir números y hacer cálculos a mano con una calculadora, la hoja de cálculo lo hace por ti al instante.
 
 **Analogía:** Piensa en la lista de jugadores y estadísticas de tu equipo de fútbol o baloncesto favorito. Cada jugador es una fila, y sus datos (goles, asistencias, minutos jugados) son las columnas. ¡Una hoja de cálculo es perfecta para eso!
 
@@ -9,7 +9,7 @@ Imagina una hoja de cálculo como un **supercuaderno digital** diseñado especí
 El poder de las hojas de cálculo.
 :::
 
-**¿Por qué es importante?** Saber usar Google Sheets te da una **superhabilidad** en el mundo real. Las empresas, los científicos y hasta tú mismo para gestionar tus gastos o planificar un viaje, usan hojas de cálculo para tomar decisiones basadas en datos. ¡Es la base de la organización moderna!
+**¿Por qué es importante?** Saber usar Google Sheets te da una **superhabilidad** en el mundo real. *Las empresas, los científicos y hasta tú mismo* para gestionar tus *gastos o planificar un viaje*, usan hojas de cálculo para tomar decisiones basadas en datos. ¡Es la base de la organización moderna!
 
 **Curiosidad:** ¿Sabías que las primeras hojas de cálculo electrónicas se inventaron para simplificar los tediosos cálculos financieros? ¡Ahora se usan para casi cualquier cosa, desde hacer gráficos de tus notas hasta simular la trayectoria de un cohete! 🚀
 
